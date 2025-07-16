@@ -1,0 +1,31 @@
+{
+  "name": "gmail-domain-analyzer",
+  "version": "1.0.0",
+  "description": "Analyzes Gmail inbox to count emails by sender domain",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "setup": "ts-node src/setup.ts"
+  },
+  "keywords": [
+    "gmail",
+    "analysis",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "googleapis": "^126.0.1",
+    "typescript": "^5.0.0",
+    "open": "^9.1.0",
+    "google-auth-library": "^8.9.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "@types/open": "^6.2.1"
+  }
+}
