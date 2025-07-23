@@ -209,7 +209,8 @@ class GmailDomainAnalyzer {
     console.log('=======================');
     
     sortedDomains.forEach(([domain, count]) => {
-      console.log(`${domain}: ${count} emails`);
+      const searchUrl = `https://mail.google.com/mail/u/0/#search/from%3A${encodeURIComponent(domain)}`;
+      console.log(`${domain}: ${count} - ${searchUrl}`);
     });
   }
 }
